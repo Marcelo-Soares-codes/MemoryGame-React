@@ -1,14 +1,20 @@
-import React, { Children, createContext, useContext, useState } from 'react';
+import PropTypes from 'prop-types';
+import React, { createContext, useContext, useEffect, useState } from 'react';
 
-const flipCardsContext = createContext();
+import { Data } from '../../Mocks/cardMock';
 
-const defaultStateFlipCards = {
-  flipCard1: false,
-  flipCard2: false,
-  canFlip: true,
-};
+export const flipCardsContext = createContext();
 
 export const FlipCardsProvider = ({ children }) => {
-  const [flipCards, setFlipCards] = useState({});
-  return;
+  const [flipCards, setFlipCards] = useState(Data);
+
+  return (
+    <flipCardsContext.Provider value={{ flipCards, setFlipCards }}>
+      {children}
+    </flipCardsContext.Provider>
+  );
+};
+
+FlipCardsProvider.propTypes = {
+  children: PropTypes.element.isRequired,
 };

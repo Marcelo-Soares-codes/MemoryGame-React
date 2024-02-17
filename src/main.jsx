@@ -4,10 +4,14 @@ import ReactDOM from 'react-dom/client';
 import './styles/reset.css';
 import './styles/styleGlobal.css';
 
+import { FlipCardsProvider } from './utils/Context/useFlipCards';
+
 import { Home } from './pages/Home';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <Home></Home>
+    <FlipCardsProvider>
+      <Home></Home>
+    </FlipCardsProvider>
   </React.StrictMode>,
 );
