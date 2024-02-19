@@ -8,7 +8,7 @@ Spelet é um jogo da memória com o tema de programação, desenvolvido com o ob
 
 ## Acesse o Jogo
 
-Você pode acessar o jogo [aqui](https://memory-game-react-orcin.vercel.app/).
+Você pode acessar o jogo [aqui](https://spelet.vercel.app/).
 
 ## Funcionalidades
 
