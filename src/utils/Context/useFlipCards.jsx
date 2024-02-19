@@ -1,12 +1,12 @@
 import PropTypes from 'prop-types';
 import React, { createContext, useContext, useEffect, useState } from 'react';
 
-import { Data, dataMedium } from '../../Mocks/cardMock';
+import { RandomData, allData } from '../../Data/cardData';
 
 export const flipCardsContext = createContext();
 
 export const FlipCardsProvider = ({ children }) => {
-  const [flipCards, setFlipCards] = useState(Data(dataMedium));
+  const [flipCards, setFlipCards] = useState(RandomData(allData.Medium));
 
   return (
     <flipCardsContext.Provider value={{ flipCards, setFlipCards }}>

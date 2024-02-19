@@ -1,12 +1,16 @@
 import React, { useContext } from 'react';
 import { flipCardsContext } from '../../utils/Context/useFlipCards';
-import { Data, dataMedium } from '../../Mocks/cardMock';
+import { RandomData } from '../../Data/cardData';
 
 export const PopupCompleted = () => {
-  const { setFlipCards } = useContext(flipCardsContext);
+  const { flipCards, setFlipCards } = useContext(flipCardsContext);
 
   const resetCards = () => {
-    setFlipCards(Data(dataMedium));
+    const newFlipCards = flipCards.map((card) => {
+      card = { ...card, equal: false, flip: false };
+      return card;
+    });
+    setFlipCards(RandomData(newFlipCards));
   };
 
   const handleClick = () => {

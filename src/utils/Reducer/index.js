@@ -1,14 +1,14 @@
 import React, { useContext, useReducer } from 'react';
-import { Data, dataEasy, dataHard, dataMedium } from '../../Mocks/cardMock';
+import { RandomData, allData } from '../../Data/cardData';
 
 export const reducer = (state, action) => {
   switch (action.type) {
     case 'Easy':
-      return Data(dataEasy);
+      return RandomData(allData.Easy);
     case 'Medium':
-      return Data(dataMedium);
+      return RandomData(allData.Medium);
     case 'Hard':
-      return Data(dataHard);
+      return RandomData(allData.Hard);
 
     default:
       return state;
