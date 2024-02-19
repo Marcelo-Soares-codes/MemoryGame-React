@@ -21,13 +21,13 @@ export const Card = ({ id, img, equal, flip }) => {
   return (
     <CardFlip isFlipped={equal ? true : flip} flipDirection="horizontal">
       <div
-        className="bg-segundaryColorBlue border-primaryColorBlue border-4 rounded-xl w-full h-full cursor-pointer p-2"
+        className="bg-segundaryColorBlue border-primaryColorBlue rounded-xl w-full h-full cursor-pointer p-2"
         onClick={handleClick}
       >
         <img src="logo.png" alt="Front" />
       </div>
       <div
-        className="bg-segundaryColorBlue border-primaryColorBlue border-4 rounded-xl w-full h-full cursor-pointer p-4"
+        className="bg-segundaryColorBlue border-primaryColorBlue rounded-xl w-full h-full cursor-pointer p-4"
         onClick={handleClick}
       >
         <img src={img} alt="Back" />

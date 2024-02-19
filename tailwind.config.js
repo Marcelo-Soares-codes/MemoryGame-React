@@ -11,7 +11,7 @@ export default {
     colors: {
       primaryColorBlue: '#4E8098',
       segundaryColorBlue: '#90C2E7',
-      tertiaryColorRed: '#A31621',
+      tertiaryColorRed: '#A31520',
       white: '#ffffff',
       grey: '#CED3DC',
     },

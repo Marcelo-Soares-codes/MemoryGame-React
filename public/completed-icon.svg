@@ -1,0 +1,11 @@
+<svg width="800" height="800" xmlns="http://www.w3.org/2000/svg" fill="#04D300">
+ <g>
+  <title>Layer 1</title>
+  <rect id="svg_3" height="198" width="262" y="199" x="280" fill="#DDDDDD"/>
+  <g id="svg_1">
+   <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+   <path id="svg_2" d="m412,551a256,256 0 1 0 0,-512a256,256 0 1 0 0,512zm113,-303l-128,128c-9.4,9.4 -24.6,9.4 -33.9,0l-64,-64c-9.4,-9.4 -9.4,-24.6 0,-33.9s24.6,-9.4 33.9,0l47,47l111,-111.1c9.4,-9.4 24.6,-9.4 33.9,0s9.4,24.6 0,33.9l0.1,0.1z"/>
+  </g>
+ </g>
+
+</svg>
